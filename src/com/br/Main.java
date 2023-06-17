@@ -30,7 +30,7 @@ public class Main {
             System.out.println("1. Employee\n"+
                     "2. Customer\n"+
                     "0. Exit" );
-            System.out.println("Choose your option:");
+            System.out.print("Choose your option: ");
             option = scanner.nextInt();
             scanner.nextLine();
 

@@ -18,8 +18,9 @@ public class Employee {
             System.out.println("============= MENU EMPLOYEE =============");
             System.out.println("1. Register product \n"+
                     "2. Update product\n"+
+                    "3. List all products\n"+
                     "0. Return");
-            System.out.println("Choose your option:");
+            System.out.print("Choose your option: ");
             option = scanner.nextInt();
             scanner.nextLine();
             switch (option) {
@@ -28,6 +29,8 @@ public class Employee {
                 case 1: registerProduct(DBConnection.getConnection(), scanner);
                     break;
                 case 2: updateProduct(DBConnection.getConnection(),scanner);
+                    break;
+                case 3: DBConnection.getAllProducts();
                     break;
             }
         } while (option != 0);
