@@ -22,13 +22,4 @@ public class ShoppingCart {
         cart.isEmpty();
         return true;
     }
-
-    public static void remove(Integer id) {
-        if (cart.contains(id)) {
-            cart.remove(Integer.valueOf(id));
-            System.out.println("Product removed from cart successfully!");
-        } else {
-            System.out.println("Product not found in cart!");
-        }
-    }
 }
